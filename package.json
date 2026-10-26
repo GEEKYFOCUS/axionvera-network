@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:contracts": "cargo build -p axionvera-vault-contract --target wasm32-unknown-unknown --release",
+    "build:contracts": "node init && cargo build -p axionvera-vault-contract --target wasm32-unknown-unknown --release",
     "test:rust": "cargo test -p axionvera-vault-contract",
     "test": "vitest run",
     "test:integration": "vitest run --config vitest.integration.config.ts",
